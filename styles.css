@@ -29,6 +29,10 @@ li{
     flex: 1;
 }
 
+.container {
+    padding: 50px 0;
+}
+
 .row {
     width: 100%;
     max-width: 800px;
@@ -41,6 +45,14 @@ li{
 
 h1 {
     font-size:36px;
+}
+
+section:nth-child(even) {
+    background-color: #aaa7a7d8;
+}
+
+.section__title {
+    margin-bottom: 20px;
 }
 
 /*Navigation bar*/
@@ -93,6 +105,11 @@ nav {
     flex-direction: column;
 }
 
+.about-me__info {
+    display: flex;
+    flex-direction: column;
+}
+
 .about-me__info--container {
     display: flex;
     flex-direction: column;
@@ -122,13 +139,58 @@ nav {
 }
 
 .about-me__info--para {
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 28px;
 }
 
 .about-me__link {
     font-size: 20px;
-    color: #141414;
+    color: #1317f1;
     text-decoration: none;
     padding: 0 16px;
+}
+
+.about-me__img--container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.about-me__img {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+}
+
+/*TECH STACK*/
+
+.language__img {
+    width: 100%;
+    max-width: 100px;
+    transition: all 300ms;
+}
+
+.language__img:hover {
+    filter: brightness(80%);
+    opacity: 0.86;
+    transform: scale(0.9);
+}
+
+.language {
+    width: 25%;
+}
+
+.language__img--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 16px;
+}
+
+.language__list {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
 }
